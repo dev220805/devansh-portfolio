@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, GitHub, LinkedinIcon } from 'lucide-react';
+import { ArrowDown, Github, LinkedinIcon } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -38,7 +37,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
                 className="hover:text-portfolio-purple transition-colors"
               >
-                <GitHub />
+                <Github />
               </a>
               <a 
                 href="https://linkedin.com/" 

@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, GitHub } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 type Project = {
@@ -93,7 +92,7 @@ const ProjectsSection = () => {
               <CardFooter className="flex justify-between">
                 <Button asChild variant="outline" size="sm">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <GitHub className="h-4 w-4" /> GitHub
+                    <Github className="h-4 w-4" /> GitHub
                   </a>
                 </Button>
                 <Button asChild className="bg-portfolio-indigo hover:bg-portfolio-purple" size="sm">
