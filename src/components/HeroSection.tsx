@@ -11,7 +11,7 @@ const HeroSection = () => {
           <div className="order-2 lg:order-1">
             <p className="text-portfolio-purple font-medium mb-3 animate-fade-in">Hi, my name is</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in">
-              John Doe
+              Devansh
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-500 mb-6 opacity-0 animate-fade-in-delayed">
               I build things for the web.
@@ -51,7 +51,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end hidden custom-min-w-1022:block">
             <div className="relative max-w-sm mx-auto lg:mx-0 mb-8 lg:mb-0">
               <div className="absolute w-full h-full bg-portfolio-purple/20 rounded-lg -top-3 -right-3 z-0"></div>
               <div className="absolute w-full h-full bg-portfolio-indigo/30 rounded-lg -bottom-3 -left-3 z-0"></div>
