@@ -10,7 +10,6 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-portfolio-indigo/20 rounded-full absolute -top-6 -right-6"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg bg-white relative z-10 overflow-hidden shadow-xl">
                 <img 
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80" 
@@ -24,7 +23,7 @@ const AboutSection = () => {
           <div>
             <h2 className="section-heading">About Me</h2>
             <p className="text-gray-600 mb-4">
-              Hi there! I'm John Doe, a passionate frontend developer with over 5 years of experience 
+              Hi there! I'm Devansh, a passionate frontend developer with over 5 years of experience 
               creating engaging web experiences. I specialize in building responsive, user-friendly interfaces 
               using modern technologies like React, TypeScript, and Tailwind CSS.
             </p>
