@@ -38,7 +38,7 @@ const skillCategories: SkillCategory[] = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="bg-white">
+    <section id="skills" className="bg-white py-16 md:py-24 rounded-t-3xl shadow-md">
       <div className="section-container">
         <h2 className="section-heading">My Skills</h2>
         <p className="text-gray-600 max-w-3xl mb-12">
@@ -47,8 +47,17 @@ const SkillsSection = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skillCategories.map((category) => (
-            <Card key={category.id} className="hover:shadow-md transition-shadow">
+          {skillCategories.map((category, index) => (
+            <Card 
+              key={category.id} 
+              className="overflow-hidden transition-all duration-300 hover:shadow-lg border-t-4 hover:-translate-y-1"
+              style={{ 
+                borderTopColor: index === 0 ? '#3B82F6' : 
+                              index === 1 ? '#8B5CF6' : 
+                              index === 2 ? '#4F46E5' : 
+                              '#1F2937'
+              }}
+            >
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">{category.icon}</span>
@@ -61,7 +70,7 @@ const SkillsSection = () => {
                   {category.skills.map((skill) => (
                     <span 
                       key={skill} 
-                      className="badge"
+                      className="badge transition-all hover:bg-portfolio-indigo/20 hover:scale-105"
                     >
                       {skill}
                     </span>
