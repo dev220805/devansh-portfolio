@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, LinkedinIcon } from 'lucide-react';
+import { Github, LinkedinIcon } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -64,14 +64,6 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
-          <Button variant="ghost" size="icon" asChild className="text-portfolio-indigo hover:text-portfolio-purple hover:bg-portfolio-indigo/10">
-            <a href="#projects">
-              <ArrowDown />
-            </a>
-          </Button>
         </div>
       </div>
     </section>
