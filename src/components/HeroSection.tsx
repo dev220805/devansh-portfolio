@@ -17,7 +17,7 @@ const HeroSection = () => {
               I build things for the web.
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl opacity-0 animate-fade-in-delayed-more">
-              I'm a frontend developer specializing in building exceptional digital experiences. 
+              I'm a full stack web developer specializing in building exceptional digital experiences. 
               Currently, I'm focused on creating accessible, human-centered products.
             </p>
             
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com/" 
+                href="https://www.linkedin.com/in/devansh-bansal-916174213/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-portfolio-purple transition-colors text-gray-700"

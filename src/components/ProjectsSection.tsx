@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -21,19 +22,19 @@ const projects: Project[] = [
     title: 'E-commerce Platform',
     description: 'A full-featured e-commerce platform with product listings, cart functionality, and checkout process.',
     imageSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80',
-    technologies: ['React', 'Redux', 'Node.js', 'MongoDB', 'Stripe'],
+    technologies: ['React', 'Supabase', 'Node.js', 'Tailwind CSS', 'Stripe'],
     githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    liveUrl: 'https://style-haven-eight.vercel.app/',
     featured: true
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A task management application with drag-and-drop functionality, task categorization, and user authentication.',
+    title: 'Train Booking Website',
+    description: 'A frontend train booking application with seat selection, booking functionality, and user dashboard.',
     imageSrc: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80',
-    technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Redux'],
     githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    liveUrl: 'https://irctc-dreamscape-72.vercel.app/',
     featured: true
   },
   {
