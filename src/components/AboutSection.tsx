@@ -23,19 +23,19 @@ const AboutSection = () => {
           <div>
             <h2 className="section-heading">About Me</h2>
             <p className="text-gray-600 mb-4">
-              Hi there! I'm Devansh, a passionate full stack developer with over 5 years of experience 
-              creating engaging web experiences. I specialize in building responsive, user-friendly interfaces 
-              using modern technologies like React, TypeScript, and Tailwind CSS.
+              Hi there! I'm Devansh, a passionate full stack developer currently in my second year of 
+              university. I'm enthusiastic about creating engaging web experiences and continuously expanding 
+              my knowledge in modern technologies like React, TypeScript, and Tailwind CSS.
             </p>
             <p className="text-gray-600 mb-4">
-              My journey in web development began when I was in college, where I discovered my love for 
-              bringing designs to life through code. Since then, I've worked with various companies and 
-              clients to deliver high-quality web applications.
+              My journey in web development began during my first year of college, where I discovered 
+              my passion for bringing designs to life through code. Since then, I've been working on various 
+              personal projects and collaborative endeavors to enhance my skills and build a strong portfolio.
             </p>
             <p className="text-gray-600 mb-6">
-              Beyond coding, I enjoy contributing to open-source projects, writing technical articles, 
-              and mentoring junior developers. I'm constantly learning new technologies to stay at the 
-              forefront of web development trends.
+              Beyond coding, I enjoy exploring new frameworks, participating in hackathons, and connecting 
+              with other developers in the community. I'm always eager to take on new challenges and learn 
+              technologies that will help me grow as a developer.
             </p>
             
             <Button asChild className="flex items-center gap-2 bg-portfolio-indigo hover:bg-portfolio-purple">
