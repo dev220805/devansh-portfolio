@@ -1,9 +1,12 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Mail, Clock } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { useToast } from '@/hooks/use-toast';
 
 type Project = {
   id: number;
@@ -14,6 +17,7 @@ type Project = {
   githubUrl: string;
   liveUrl: string;
   featured: boolean;
+  inProgress?: boolean;
 };
 
 const projects: Project[] = [
@@ -45,7 +49,8 @@ const projects: Project[] = [
     technologies: ['JavaScript', 'Chart.js', 'OpenWeather API', 'CSS3'],
     githubUrl: 'https://github.com',
     liveUrl: 'https://example.com',
-    featured: false
+    featured: false,
+    inProgress: true
   },
   {
     id: 4,
@@ -55,7 +60,8 @@ const projects: Project[] = [
     technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
     githubUrl: 'https://github.com',
     liveUrl: 'https://example.com',
-    featured: false
+    featured: false,
+    inProgress: true
   }
 ];
 
@@ -102,6 +108,16 @@ const ContactDialog = () => {
 };
 
 const ProjectsSection = () => {
+  const { toast } = useToast();
+  
+  const handleInProgressClick = (projectTitle: string) => {
+    toast({
+      title: "Project in Development",
+      description: `${projectTitle} is currently under development and will be available soon.`,
+      duration: 3000,
+    });
+  };
+  
   return (
     <section id="projects" className="bg-gray-50">
       <div className="section-container">
@@ -122,7 +138,23 @@ const ProjectsSection = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  {project.title}
+                  {project.inProgress && (
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <Badge variant="outline" className="gap-1 border-amber-500 text-amber-600">
+                            <Clock className="h-3 w-3" /> In Progress
+                          </Badge>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>This project is currently under development</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  )}
+                </CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
               <CardContent>
@@ -133,16 +165,33 @@ const ProjectsSection = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button asChild variant="outline" size="sm">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Github className="h-4 w-4" /> GitHub
-                  </a>
-                </Button>
-                <Button asChild className="bg-portfolio-indigo hover:bg-portfolio-purple" size="sm">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <ExternalLink className="h-4 w-4" /> Live Demo
-                  </a>
-                </Button>
+                {project.inProgress ? (
+                  <Button variant="outline" size="sm" onClick={() => handleInProgressClick(project.title)} className="flex items-center gap-2">
+                    <Github className="h-4 w-4" /> Coming Soon
+                  </Button>
+                ) : (
+                  <Button asChild variant="outline" size="sm">
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github className="h-4 w-4" /> GitHub
+                    </a>
+                  </Button>
+                )}
+                
+                {project.inProgress ? (
+                  <Button 
+                    size="sm" 
+                    className="bg-portfolio-indigo hover:bg-portfolio-purple flex items-center gap-2"
+                    onClick={() => handleInProgressClick(project.title)}
+                  >
+                    <Clock className="h-4 w-4" /> In Development
+                  </Button>
+                ) : (
+                  <Button asChild className="bg-portfolio-indigo hover:bg-portfolio-purple" size="sm">
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <ExternalLink className="h-4 w-4" /> Live Demo
+                    </a>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
