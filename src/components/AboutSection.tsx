@@ -23,7 +23,7 @@ const AboutSection = () => {
           <div>
             <h2 className="section-heading">About Me</h2>
             <p className="text-gray-600 mb-4">
-              Hi there! I'm Devansh, a passionate frontend developer with over 5 years of experience 
+              Hi there! I'm Devansh, a passionate full stack developer with over 5 years of experience 
               creating engaging web experiences. I specialize in building responsive, user-friendly interfaces 
               using modern technologies like React, TypeScript, and Tailwind CSS.
             </p>

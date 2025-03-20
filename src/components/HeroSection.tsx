@@ -33,7 +33,7 @@ const HeroSection = () => {
             
             <div className="mt-12 flex space-x-6 items-center">
               <a 
-                href="https://github.com/" 
+                href="https://github.com/dev220805" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-portfolio-purple transition-colors text-gray-700"

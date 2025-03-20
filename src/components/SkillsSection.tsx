@@ -13,19 +13,19 @@ const skillCategories: SkillCategory[] = [
   {
     id: 1,
     title: 'Frontend Development',
-    skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue', 'Redux', 'Tailwind CSS', 'SASS/SCSS'],
+    skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
     icon: '💻'
   },
   {
     id: 2,
     title: 'Backend Development',
-    skills: ['Node.js', 'Express', 'Python', 'Django', 'GraphQL', 'RESTful APIs', 'PostgreSQL', 'MongoDB', 'Firebase'],
+    skills: ['Node.js', 'Express', 'RESTful APIs', 'PostgreSQL', 'MongoDB', 'Firebase'],
     icon: '🔧'
   },
   {
     id: 3,
     title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'VS Code', 'Webpack', 'Docker', 'AWS', 'Vercel', 'Netlify', 'CI/CD', 'Jest'],
+    skills: ['Git', 'GitHub', 'VS Code', 'AWS', 'Vercel', 'Netlify', 'CI/CD'],
     icon: '🛠️'
   },
   {
