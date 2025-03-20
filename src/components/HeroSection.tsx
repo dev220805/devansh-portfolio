@@ -1,7 +1,50 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Github, LinkedinIcon } from 'lucide-react';
+import { Github, LinkedinIcon, Mail } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+
+const ContactDialog = () => {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline" size="lg" className="hover:border-portfolio-purple hover:text-portfolio-purple transition-colors">
+          Contact Me
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle className="text-xl font-semibold mb-4">Get in Touch</DialogTitle>
+        </DialogHeader>
+        <div className="space-y-4">
+          <a 
+            href="https://www.linkedin.com/in/devansh-bansal-916174213/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+          >
+            <LinkedinIcon className="h-6 w-6 text-blue-600" />
+            <div>
+              <p className="font-medium">LinkedIn</p>
+              <p className="text-sm text-gray-600">Connect with me professionally</p>
+            </div>
+          </a>
+          
+          <a 
+            href="mailto:devanshbansal05@gmail.com" 
+            className="flex items-center gap-3 p-4 bg-amber-50 rounded-lg hover:bg-amber-100 transition-colors"
+          >
+            <Mail className="h-6 w-6 text-amber-600" />
+            <div>
+              <p className="font-medium">Email</p>
+              <p className="text-sm text-gray-600">devanshbansal05@gmail.com</p>
+            </div>
+          </a>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
 
 const HeroSection = () => {
   return (
@@ -26,9 +69,7 @@ const HeroSection = () => {
                 <a href="#projects">View My Work</a>
               </Button>
               
-              <Button asChild variant="outline" size="lg" className="hover:border-portfolio-purple hover:text-portfolio-purple transition-colors">
-                <a href="#contact">Contact Me</a>
-              </Button>
+              <ContactDialog />
             </div>
             
             <div className="mt-12 flex space-x-6 items-center">

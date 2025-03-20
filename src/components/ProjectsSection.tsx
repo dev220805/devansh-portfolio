@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -149,14 +148,12 @@ const ProjectsSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 flex justify-center">
           <Button asChild className="bg-portfolio-indigo hover:bg-portfolio-purple">
             <a href="https://github.com/dev220805?tab=repositories" target="_blank" rel="noopener noreferrer">
               View All Projects on GitHub
             </a>
           </Button>
-          
-          <ContactDialog />
         </div>
       </div>
     </section>
