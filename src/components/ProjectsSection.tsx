@@ -27,8 +27,8 @@ const projects: Project[] = [
     description: 'A full-featured e-commerce platform with product listings, cart functionality, and checkout process.',
     imageSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80',
     technologies: ['React', 'Supabase', 'Node.js', 'Tailwind CSS', 'Stripe'],
-    githubUrl: 'https://github.com/dev220805/ecommerce-project',
-    liveUrl: 'https://style-haven-eight.vercel.app/',
+    githubUrl: 'https://github.com/dev220805/ecommerce',
+    liveUrl: 'https://ecommerce-jr38.vercel.app/',
     featured: true
   },
   {
@@ -43,14 +43,13 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'A weather application that shows current weather and forecasts based on location with interactive charts.',
-    imageSrc: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80',
-    technologies: ['JavaScript', 'Chart.js', 'OpenWeather API', 'CSS3'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    featured: false,
-    inProgress: true
+    title: 'Job Finder Platform',
+    description: 'A job seeking platform that helps users search and apply for jobs with advanced filtering and search capabilities.',
+    imageSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'API Integration'],
+    githubUrl: 'https://github.com/dev220805/Job-Seeking',
+    liveUrl: 'https://job-seeking-n9qz.vercel.app/',
+    featured: false
   },
   {
     id: 4,
