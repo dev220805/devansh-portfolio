@@ -39,7 +39,7 @@ const AboutSection = () => {
             </p>
             
             <Button asChild className="flex items-center gap-2 bg-portfolio-indigo hover:bg-portfolio-purple">
-              <a href="https://docs.google.com/document/d/1gksqcxwBXDBdRpuHNv-SZT37hDRmcOw2QnX5OkrTNfc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/18n4lV51s3citHinYp3qYJLMYHdk-Pdca/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <FileText className="h-4 w-4" /> Download Resume
               </a>
             </Button>
