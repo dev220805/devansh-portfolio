@@ -28,7 +28,7 @@ const projects: Project[] = [
     imageSrc: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80',
     technologies: ['React', 'Supabase', 'Node.js', 'Tailwind CSS', 'Stripe'],
     githubUrl: 'https://github.com/dev220805/ecommerce',
-    liveUrl: 'https://ecommerce-jr38.vercel.app/',
+    liveUrl: 'https://clothing-ecommerce-ap55.vercel.app/',
     featured: true
   },
   {
